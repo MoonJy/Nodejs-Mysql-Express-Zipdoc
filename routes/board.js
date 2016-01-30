@@ -8,5 +8,5 @@ router.get('/main', function (req, res, next) {
     var id =req.session.user_id;
     res.render('board/main', { title: '메인',user_id:id});
 });
-<!--git hub test-->
+
 module.exports = router;

@@ -192,7 +192,7 @@ router.post('/register', function (req, res, next) {
         });
     }
 });
-
+//testtesttest0130
 /*
  업체 사진 수정하기
  */
