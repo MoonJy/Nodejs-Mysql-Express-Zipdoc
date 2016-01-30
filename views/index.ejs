@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  <h1>집닥 관리자 로그인</h1>
+  <form action = "/supervisor/login" method = "post">
+    <!-- table>tr*3>th+td 탭키 -->
+    <table>
+      <tr>
+        <th>아이디</th>
+        <td><input type = "text" id ="id" name = "id" size = "12" maxlength ="12"></td>
+      </tr>
+      <tr>
+        <th>비밀번호</th>
+        <td><input type = "password" id ="passwd" name = "passwd" size = "12" maxlength ="12"></td>
+      </tr>
+      <tr>
+        <td colspan = "2">
+          <input type = "submit" value = "로그인">
+          <input type = "reset" value = "취소">
+        </td>
+      </tr>
+    </table>
+  </form>
+  </body>
+</html>

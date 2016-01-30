@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<h1>관리자 페이지</h1>
+
+<% if(user_id){ %>
+<h1>집닥 푸시 테스트</h1>
+<form action="/uuid/push" method="post">
+    제목 : <input type="text" name="message1" size="20"/><br>
+    내용 : <input type="text" name="message2" size="20"/><br>
+    <input type="submit" value="Push"/>
+</form>
+
+<a href="/board/main">푸쉬</a><br>
+<a href="/company/list">업체리스트</a><br>
+<a href="/company">업체리스트</a><br>
+<a href="/members/logout">로그아웃</a><br>
+<%}else{%>
+<% } %>
+</body>
+</html>
